@@ -9,7 +9,8 @@
 </head>
 <style>
     * {
-        font-family:Arial, Helvetica, sans-serif
+        font-family:Arial, Helvetica, sans-serif;
+        /* overflow: hidden; */
     }
 
     .middle {
@@ -74,11 +75,37 @@
     }
 
     .button {
+        text-align: center;
         background-color: rgb(47, 47, 245);
         color: #ffffff;
         padding: 15px 30px 15px 30px;
         margin-left: 10px;
         border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: rgba(0, 0, 255, 0.685);
+    }
+
+    footer {
+        display: flex;
+        justify-content: auto;
+        width: 100vw;
+        background-color: rgba(128, 128, 128, 0.144);
+        color:grey;
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        text-decoration: none;
+    }
+
+    footer a {
+        color:rgba(78, 78, 78, 0.616);
+        padding: 10px;   
+    }
+
+    footer a:hover {
+        text-decoration: underline;
     }
 
 </style>
@@ -106,8 +133,20 @@
     
         <div class="middle">Google offered in:  <a href="https://www.google.com/setprefs?sig=0_DcqUxhbNRH9vg2E2_RbuKZr_Q38%3D&amp;hl=zh-TW&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwje0cK9kvnuAhWuGaYKHS-LARIQ2ZgBCA4">中文（繁體）</a>    <a href="https://www.google.com/setprefs?sig=0_DcqUxhbNRH9vg2E2_RbuKZr_Q38%3D&amp;hl=zh-CN&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwje0cK9kvnuAhWuGaYKHS-LARIQ2ZgBCA8">中文(简体)</a>  </div>
 
-    
     </center>
+  
+
+    <footer>
+        
+        <a href="about.html">About</a>
+        <a href="advertising.html">Advertising</a>
+        <a href="business.html">Business</a>
+        <a href="howsearch.html">How Search Works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="settings.html">Settings</a>
+   
+    </footer>
 </body>
 
 </html>
