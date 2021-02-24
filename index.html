@@ -10,7 +10,7 @@
 <style>
     * {
         font-family:Arial, Helvetica, sans-serif;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     main {
@@ -18,7 +18,6 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-
     }
 
     img {
@@ -68,9 +67,7 @@
     .top-link {
         color: black;
         text-decoration: none;
-        /* text-align: center;
-        align-items: center;
-        justify-content: center; */
+
     }
 
     .top-link:hover {
@@ -93,7 +90,7 @@
     .button {
         text-align: center;
         margin-left: -10px;
-        margin-top: -5px;
+        /* margin-top: -5px; */
         background-color: rgb(47, 47, 245);
         color: #ffffff;
         padding: 10px;
@@ -105,18 +102,20 @@
     }
 
     footer {
-        display: flex;
-        justify-content: auto;
-        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        width: 100%;
         background-color: rgba(128, 128, 128, 0.144);
         color:grey;
-        padding: 10px;
         position: absolute;
         bottom: 0px;
         text-decoration: none;
     }
 
     footer a {
+        padding: 10px;
+        text-align: center;
+        /* justify-content: auto; */
         color:rgba(78, 78, 78, 0.616);
         padding: 10px;   
     }
