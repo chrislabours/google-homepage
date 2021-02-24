@@ -58,6 +58,8 @@
     }
 
     header{
+        display: grid;
+        grid-template-columns: 75px 75px 75px 90px;
         position: absolute;
         top: 5%;
         right: 5%;
@@ -66,32 +68,35 @@
     .top-link {
         color: black;
         text-decoration: none;
-        margin-right: 10px;
+        /* text-align: center;
+        align-items: center;
+        justify-content: center; */
     }
 
     .top-link:hover {
         text-decoration: underline;
     }
 
-    .apps {
+    #apps {
+        margin-left: 10px;
         width: 20px;
         height: 20px;
     }
 
-    .apps:hover {
+    #apps:hover {
         background-color: rgb(192, 191, 191);
         width: 25px;
         height: 25px;
-        margin: auto;
-        border-radius: 50%;
+        border-radius: 100%;
     }
 
     .button {
         text-align: center;
+        margin-left: -10px;
+        margin-top: -5px;
         background-color: rgb(47, 47, 245);
         color: #ffffff;
-        padding: 15px 30px 15px 30px;
-        margin-left: 10px;
+        padding: 10px;
         border-radius: 5px;
     }
 
@@ -127,7 +132,7 @@
         <a href="gmail.com" class="top-link">Gmail</a>
         <a href="google.com/images" class="top-link">Images</a>
     
-        <svg class="apps" focusable="false" ><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+        <svg class="top-link" id="apps" focusable="false" ><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
         
         <btn class="button">Sign In</btn>
     </header>
